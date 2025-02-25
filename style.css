@@ -1,0 +1,181 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+header {
+    background-color: #717070;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    background-color: #717070;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#green {
+    background-color: #98fb98;
+}
+
+#yellow {
+    background-color: #fffacd;
+}
+
+#pink {
+    background-color: #ffc0cb;
+}
+
+#blue {
+    background-color: #afeeee;
+}
+
+#purple {
+    background-color: #d8bfd8;
+}
+
+a:link {
+    font-family: "Merriweather", serif;
+    font-size: large;
+    color: #00ced1;
+}
+
+a:visited {
+    color: #008b8b;
+}
+
+a:hover {
+    color: #e0218a;
+}
+
+li {
+    background: #ffe4e1;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
+}
+
+.col {
+    color: #008080;
+}
+
+#yel li {
+    background: #f0e68c;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
+}
+
+table, th, td {
+    border: 1px solid rgb(13, 116, 147);
+    border-radius: 10px;
+    font-size: large;
+    padding: 10px;
+}
+
+th {
+    background-color: lightcyan;
+}
+
+img {
+    border: 5px solid #555
+}
+
+h3 {
+    text-align: center;
+}
+
+figcaption {
+    color: #8b4513;
+    font-family: "Merriweather", serif;
+}
+
+video {
+    border: 5px solid #555
+}
+
+#gre h3 {
+    color: #008000;
+}
+
+.social-container {
+    display: flex;
+    gap: 50px;
+}
+
+.social-icon {
+    font-size: 100px !important;
+    color: #555 !important;
+    text-decoration: none;
+}
+
+.social-icon.instagram:hover { color: #E1306C !important; } 
+.social-icon.twitter:hover { color: #1DA1F2 !important; }
+.social-icon.tiktok:hover { color: #000000 !important; }
+
+/*992*/
+@media (max-width: 992px) {
+    body {
+        padding: 20px;
+    }
+
+    .social-container {
+        gap: 30px;
+    }
+
+    .social-icon {
+        font-size: 80px !important;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    li {
+        width: 250px;
+    }
+
+    table, th, td {
+        font-size: medium;
+    }
+
+    #green, #yellow, #pink, #blue, #purple {
+        padding: 10px;
+    }
+}
+
+/*768*/
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .social-container {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icon {
+        font-size: 60px !important;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    li {
+        width: 200px;
+    }
+
+    table, th, td {
+        font-size: medium;
+    }
+}
